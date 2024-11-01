@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+ <meta charSet="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <link rel="icon" href="/favicon.ico" />
+ <title>Introduction to computer science</title>
+ <meta name="description" content="" />
+ <meta name="next-head-count" content="5" />
+ <link rel="preload" href="https://ioacademy.vercel.app//_next/static/css/9a35c35bdc81a39f.css" as="style" />
+ <link rel="stylesheet" href="https://ioacademy.vercel.app//_next/static/css/9a35c35bdc81a39f.css" data-n-g="" />
+ <link rel="preload" href="https://ioacademy.vercel.app//_next/static/css/f329e2a03883da8c.css" as="style" />
+ <link rel="stylesheet" href="https://ioacademy.vercel.app//_next/static/css/f329e2a03883da8c.css" data-n-p="" /><noscript data-n-css=""></noscript>
+ <script defer="" nomodule="" src="https://ioacademy.vercel.app//_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
+ <script src="https://ioacademy.vercel.app//_next/static/chunks/webpack-59c5c889f52620d6.js" defer=""></script>
+ <script src="https://ioacademy.vercel.app//_next/static/chunks/framework-581f102fc68ef277.js" defer=""></script>
+ <script src="https://ioacademy.vercel.app//_next/static/chunks/main-71220c1e4946f592.js" defer=""></script>
+ <script src="https://ioacademy.vercel.app/_next/static/chunks/pages/_app-1702904acd5ad70d.js" defer=""></script>
+ <script src="https://ioacademy.vercel.app//_next/static/chunks/634-3c0812243db3b377.js" defer=""></script>
+ <script src="https://ioacademy.vercel.app//_next/static/chunks/pages/tutorials/%5Blesson%5D/%5Bslug%5D-94b32f4b543bbf18.js" defer=""></script>
+ <script src="https://ioacademy.vercel.app//_next/static/Ut2a7_XG2Cdw3u6Y-X9nE/_buildManifest.js" defer=""></script>
+ <script src="https://ioacademy.vercel.app//_next/static/Ut2a7_XG2Cdw3u6Y-X9nE/_ssgManifest.js" defer=""></script>
+</head>
+
+<body class="dark:bg-gray-900">
+ <div id="__next">
+  <script>
+   ! function() {
+    try {
+     var d = document.documentElement,
+      c = d.classList;
+     c.remove('light', 'dark');
+     var e = localStorage.getItem('theme');
+     if ('system' === e || (!e && false)) {
+      var t = '(prefers-color-scheme: dark)',
+       m = window.matchMedia(t);
+      if (m.media !== t || m.matches) {
+       d.style.colorScheme = 'dark';
+       c.add('dark')
+      } else {
+       d.style.colorScheme = 'light';
+       c.add('light')
+      }
+     } else if (e) {
+      c.add(e || '')
+     } else {
+      c.add('light')
+     }
+     if (e === 'light' || e === 'dark' || !e) d.style.colorScheme = e || 'light'
+    } catch (e) {}
+   }()
+  </script>
+  <header>
+   <nav class="bg-gray-900 dark:bg-gray-900 w-full md:static md:text-sm ">
+    <div class="custom-screen relative items-center mx-auto md:flex">
+     <div class="flex items-center justify-between py-3 md:py-5 md:block"><a aria-label="Logo" href="/"><svg class="dark:text-white text-white" width="130" height="40" viewBox="0 0 170 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="49" height="40" rx="8" fill="#0EA5E9"></rect>
+        <path d="M15.1176 9.18182V31H11.8257V9.18182H15.1176ZM38.8641 20.0909C38.8641 22.4205 38.4379 24.4233 37.5857 26.0994C36.7334 27.7685 35.5651 29.054 34.0807 29.956C32.6034 30.8509 30.9237 31.2983 29.0416 31.2983C27.1524 31.2983 25.4656 30.8509 23.9813 29.956C22.504 29.054 21.3392 27.7649 20.4869 26.0888C19.6347 24.4126 19.2085 22.4134 19.2085 20.0909C19.2085 17.7614 19.6347 15.7621 20.4869 14.093C21.3392 12.4169 22.504 11.1314 23.9813 10.2365C25.4656 9.33452 27.1524 8.88352 29.0416 8.88352C30.9237 8.88352 32.6034 9.33452 34.0807 10.2365C35.5651 11.1314 36.7334 12.4169 37.5857 14.093C38.4379 15.7621 38.8641 17.7614 38.8641 20.0909ZM35.6041 20.0909C35.6041 18.3153 35.3165 16.8203 34.7412 15.6058C34.173 14.3842 33.3918 13.4609 32.3975 12.8359C31.4102 12.2038 30.2916 11.8878 29.0416 11.8878C27.7845 11.8878 26.6624 12.2038 25.6752 12.8359C24.6879 13.4609 23.9067 14.3842 23.3314 15.6058C22.7632 16.8203 22.4791 18.3153 22.4791 20.0909C22.4791 21.8665 22.7632 23.3651 23.3314 24.5866C23.9067 25.8011 24.6879 26.7244 25.6752 27.3565C26.6624 27.9815 27.7845 28.294 29.0416 28.294C30.2916 28.294 31.4102 27.9815 32.3975 27.3565C33.3918 26.7244 34.173 25.8011 34.7412 24.5866C35.3165 23.3651 35.6041 21.8665 35.6041 20.0909Z" fill="white"></path>
+        <path d="M64.9631 29H61.5881L67.733 11.5455H71.6364L77.7898 29H74.4148L69.7528 15.125H69.6165L64.9631 29ZM65.0739 22.1562H74.2784V24.696H65.0739V22.1562ZM85.2642 29.2557C83.9574 29.2557 82.8352 28.9688 81.8977 28.3949C80.9659 27.821 80.2472 27.0284 79.7415 26.017C79.2415 25 78.9915 23.8295 78.9915 22.5057C78.9915 21.1761 79.2472 20.0028 79.7585 18.9858C80.2699 17.9631 80.9915 17.1676 81.9233 16.5994C82.8608 16.0256 83.9688 15.7386 85.2472 15.7386C86.3097 15.7386 87.25 15.9347 88.0682 16.3267C88.892 16.7131 89.5483 17.2614 90.0369 17.9716C90.5256 18.6761 90.804 19.5 90.8722 20.4432H87.9233C87.804 19.8125 87.5199 19.2869 87.071 18.8665C86.6278 18.4403 86.0341 18.2273 85.2898 18.2273C84.6591 18.2273 84.1051 18.3977 83.6278 18.7386C83.1506 19.0739 82.7784 19.5568 82.5114 20.1875C82.25 20.8182 82.1193 21.5739 82.1193 22.4545C82.1193 23.3466 82.25 24.1136 82.5114 24.7557C82.7727 25.392 83.1392 25.8835 83.6108 26.2301C84.0881 26.571 84.6477 26.7415 85.2898 26.7415C85.7443 26.7415 86.1506 26.6562 86.5085 26.4858C86.8722 26.3097 87.1761 26.0568 87.4205 25.7273C87.6648 25.3977 87.8324 24.9972 87.9233 24.5256H90.8722C90.7983 25.4517 90.5256 26.2727 90.054 26.9886C89.5824 27.6989 88.9403 28.2557 88.1278 28.6591C87.3153 29.0568 86.3608 29.2557 85.2642 29.2557ZM97.1726 29.2642C96.343 29.2642 95.5959 29.1165 94.9311 28.821C94.272 28.5199 93.7493 28.0767 93.3629 27.4915C92.9822 26.9062 92.7919 26.1847 92.7919 25.3267C92.7919 24.5881 92.9283 23.9773 93.201 23.4943C93.4737 23.0114 93.8459 22.625 94.3175 22.3352C94.7891 22.0455 95.3203 21.8267 95.9112 21.679C96.5078 21.5256 97.1243 21.4148 97.7607 21.3466C98.5277 21.267 99.1499 21.196 99.6271 21.1335C100.104 21.0653 100.451 20.9631 100.667 20.8267C100.888 20.6847 100.999 20.4659 100.999 20.1705V20.1193C100.999 19.4773 100.809 18.9801 100.428 18.6278C100.048 18.2756 99.4993 18.0994 98.7834 18.0994C98.0277 18.0994 97.4283 18.2642 96.9851 18.5938C96.5476 18.9233 96.2521 19.3125 96.0987 19.7614L93.218 19.3523C93.4453 18.5568 93.8203 17.892 94.343 17.358C94.8658 16.8182 95.505 16.4148 96.2607 16.1477C97.0163 15.875 97.8516 15.7386 98.7663 15.7386C99.397 15.7386 100.025 15.8125 100.65 15.9602C101.275 16.108 101.846 16.3523 102.363 16.6932C102.88 17.0284 103.295 17.4858 103.607 18.0653C103.925 18.6449 104.085 19.3693 104.085 20.2386V29H101.119V27.2017H101.016C100.829 27.5653 100.565 27.9062 100.224 28.2244C99.8885 28.5369 99.4652 28.7898 98.9538 28.983C98.4482 29.1705 97.8544 29.2642 97.1726 29.2642ZM97.9737 26.9972C98.593 26.9972 99.13 26.875 99.5845 26.6307C100.039 26.3807 100.388 26.0511 100.633 25.642C100.883 25.233 101.008 24.7869 101.008 24.304V22.7614C100.911 22.8409 100.746 22.9148 100.513 22.983C100.286 23.0511 100.031 23.1108 99.7464 23.1619C99.4624 23.2131 99.1811 23.2585 98.9027 23.2983C98.6243 23.3381 98.3828 23.3722 98.1783 23.4006C97.718 23.4631 97.3061 23.5653 96.9425 23.7074C96.5788 23.8494 96.2919 24.0483 96.0817 24.304C95.8714 24.554 95.7663 24.8778 95.7663 25.2756C95.7663 25.8438 95.9737 26.2727 96.3885 26.5625C96.8033 26.8523 97.3317 26.9972 97.9737 26.9972ZM112.045 29.2301C111.016 29.2301 110.096 28.9659 109.283 28.4375C108.471 27.9091 107.829 27.142 107.357 26.1364C106.886 25.1307 106.65 23.9091 106.65 22.4716C106.65 21.017 106.888 19.7898 107.366 18.7898C107.849 17.7841 108.499 17.0256 109.317 16.5142C110.136 15.9972 111.048 15.7386 112.053 15.7386C112.82 15.7386 113.451 15.8693 113.945 16.1307C114.44 16.3864 114.832 16.696 115.121 17.0597C115.411 17.4176 115.636 17.7557 115.795 18.0739H115.923V11.5455H119.016V29H115.982V26.9375H115.795C115.636 27.2557 115.406 27.5937 115.104 27.9517C114.803 28.304 114.406 28.6051 113.911 28.8551C113.417 29.1051 112.795 29.2301 112.045 29.2301ZM112.906 26.6989C113.559 26.6989 114.116 26.5227 114.576 26.1705C115.036 25.8125 115.386 25.3153 115.624 24.679C115.863 24.0426 115.982 23.3011 115.982 22.4545C115.982 21.608 115.863 20.8722 115.624 20.2472C115.391 19.6222 115.045 19.1364 114.585 18.7898C114.13 18.4432 113.57 18.2699 112.906 18.2699C112.218 18.2699 111.644 18.4489 111.184 18.8068C110.724 19.1648 110.377 19.6591 110.144 20.2898C109.911 20.9205 109.795 21.642 109.795 22.4545C109.795 23.2727 109.911 24.0028 110.144 24.6449C110.383 25.2812 110.732 25.7841 111.192 26.1534C111.658 26.517 112.229 26.6989 112.906 26.6989ZM128.099 29.2557C126.787 29.2557 125.653 28.983 124.699 28.4375C123.75 27.8864 123.02 27.108 122.509 26.1023C121.997 25.0909 121.741 23.9006 121.741 22.5312C121.741 21.1847 121.997 20.0028 122.509 18.9858C123.026 17.9631 123.747 17.1676 124.673 16.5994C125.599 16.0256 126.688 15.7386 127.938 15.7386C128.744 15.7386 129.506 15.8693 130.222 16.1307C130.943 16.3864 131.58 16.7841 132.131 17.3239C132.688 17.8636 133.125 18.5511 133.443 19.3864C133.761 20.2159 133.92 21.2045 133.92 22.3523V23.2983H123.19V21.2188H130.963C130.957 20.6278 130.83 20.1023 130.58 19.642C130.33 19.1761 129.98 18.8097 129.531 18.5426C129.088 18.2756 128.571 18.142 127.98 18.142C127.349 18.142 126.795 18.2955 126.318 18.6023C125.841 18.9034 125.469 19.3011 125.202 19.7955C124.94 20.2841 124.807 20.821 124.801 21.4062V23.2216C124.801 23.983 124.94 24.6364 125.219 25.1818C125.497 25.7216 125.886 26.1364 126.386 26.4261C126.886 26.7102 127.472 26.8523 128.142 26.8523C128.591 26.8523 128.997 26.7898 129.361 26.6648C129.724 26.5341 130.04 26.3438 130.307 26.0938C130.574 25.8438 130.776 25.5341 130.912 25.1648L133.793 25.4886C133.611 26.25 133.264 26.9148 132.753 27.483C132.247 28.0455 131.599 28.483 130.81 28.7955C130.02 29.1023 129.116 29.2557 128.099 29.2557ZM136.531 29V15.9091H139.479V18.1335H139.633C139.906 17.3835 140.357 16.7983 140.988 16.3778C141.619 15.9517 142.371 15.7386 143.246 15.7386C144.133 15.7386 144.88 15.9545 145.488 16.3864C146.102 16.8125 146.533 17.3949 146.783 18.1335H146.92C147.21 17.4062 147.698 16.8267 148.386 16.3949C149.079 15.9574 149.9 15.7386 150.849 15.7386C152.053 15.7386 153.036 16.1193 153.798 16.8807C154.559 17.642 154.94 18.7528 154.94 20.2131V29H151.846V20.6903C151.846 19.8778 151.63 19.2841 151.198 18.9091C150.766 18.5284 150.238 18.3381 149.613 18.3381C148.869 18.3381 148.286 18.571 147.866 19.0369C147.451 19.4972 147.244 20.0966 147.244 20.8352V29H144.218V20.5625C144.218 19.8864 144.013 19.3466 143.604 18.9432C143.201 18.5398 142.673 18.3381 142.019 18.3381C141.576 18.3381 141.173 18.4517 140.809 18.679C140.445 18.9006 140.156 19.2159 139.94 19.625C139.724 20.0284 139.616 20.5 139.616 21.0398V29H136.531ZM159.518 33.9091C159.098 33.9091 158.709 33.875 158.351 33.8068C157.999 33.7443 157.717 33.6705 157.507 33.5852L158.223 31.1818C158.672 31.3125 159.072 31.375 159.425 31.3693C159.777 31.3636 160.087 31.2528 160.354 31.0369C160.626 30.8267 160.857 30.4744 161.044 29.9801L161.308 29.2727L156.561 15.9091H159.834L162.851 25.7955H162.987L166.013 15.9091H169.294L164.053 30.5852C163.808 31.2784 163.484 31.8722 163.081 32.3665C162.678 32.8665 162.183 33.2472 161.598 33.5085C161.018 33.7756 160.325 33.9091 159.518 33.9091Z" fill="currentColor"></path>
+       </svg></a>
+      <div class="flex gap-x-3 items-center md:hidden"><button role="button" aria-label="Change theme" class="dark:text-sky-500 text-sky-500 hover:bg-gray-800 p-2 rounded-lg dark:text-sky-500 dark:hover:bg-gray-800"></button><button role="button" aria-label="Open the menu" class="p-2 rounded-lg dark:text-gray-400 dark:hover:bg-gray-800 text-gray-400 hover:bg-gray-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+        </svg></button></div>
+     </div>
+     <div class="bg-gray-900 dark:bg-gray-900 flex-1 md:py-0 md:block md:static md:z-0 hidden">
+      <ul class="justify-end items-center space-y-6 md:flex md:space-x-6 md:space-y-0 md:font-medium">
+       <li class="text-gray-200 hover:text-sky-500 dark:text-gray-200 dark:hover:text-sky-500 duration-150"><a class="block" href="/#features">Features</a></li>
+       <li class="text-gray-200 hover:text-sky-500 dark:text-gray-200 dark:hover:text-sky-500 duration-150"><a class="block" href="/tutorials/cs50">Lessons</a></li>
+       <li class="text-gray-200 hover:text-sky-500 dark:text-gray-200 dark:hover:text-sky-500 duration-150"><a class="block" href="/#pricing">Pricing</a></li>
+       <li><span class="bg-gray-800 dark:bg-gray-700 hidden w-px h-5 md:block"></span></li>
+       <li class="hidden md:block"><button role="button" aria-label="Change theme" class="dark:text-sky-500 text-sky-500 hover:bg-gray-800 p-2 rounded-lg dark:text-sky-500 dark:hover:bg-gray-800"></button></li>
+       <li><a class="py-2.5 px-4 text-center rounded-lg duration-150 flex items-center justify-center gap-x-1 font-medium text-sm text-white bg-gray-800 hover:bg-gray-700 active:bg-gray-900 rounded-full" href="/login">Sign in<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+          <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd"></path>
+         </svg></a></li>
+      </ul>
+     </div>
+    </div>
+   </nav>
+  </header>
+  <main>
+   <div class="mt-16 lg:mt-20">
+    <div class="mx-auto lg:max-w-screen-xl lg:px-8">
+     <img src="https://ucarecdn.com/a28a40bf-2766-4e31-bedd-1f896ef5582d/-/preview/1000x563/" alt="Imagen de ejemplo" class="w-full h-auto rounded-lg shadow-md">
+    </div>
+    <div class="mx-auto mt-12 gap-8 justify-between lg:flex lg:max-w-screen-xl lg:px-8">
+     <div class="h-full lg:border-r lg:dark:border-gray-800 lg:pr-8">
+      <h1 class="px-4 md:px-8 lg:px-0 text-3xl text-gray-800 dark:text-white font-semibold lg:text-4xl">Cómo Realizar Tu Primera Lectura de Tarot: Una Guía Paso a Paso</h1>
+      <div class="sticky -top-1 px-4 mt-6 bg-white dark:bg-gray-900 flex-none md:px-8 lg:hidden lg:px-0 border-y dark:border-gray-800 lg:border-none">
+       <button aria-label="Play list button" class="w-full flex items-center gap-x-3 py-4 text-left text-gray-700 dark:text-gray-50 font-medium lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+         <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd"></path>
+        </svg>
+        Indice
+       </button>
+       <h3 class="hidden text-xl text-gray-800 dark:text-gray-50 font-semibold lg:block">Indice</h3>
+       <div class="hidden lg:block">
+        <p class="mt-4 text-gray-700 dark:text-gray-400 lg:mt-3">7 Pasos</p>
+        <ul class="mt-6 pb-4 space-y-1 max-h-[450px] overflow-auto lg:max-w-sm lg:pb-0">
+         <li class="rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 text-gray-600 dark:text-gray-300 duration-150 bg-gray-50 dark:bg-gray-800">
+          <a class="flex items-center gap-x-3 p-3" href="#paso1">
+           <span class="text-sm font-medium">1</span>
+           <h4 class="flex-1 text-gray-700 dark:text-gray-200 font-medium lg:line-clamp-1">Familiarízate con tu Mazo</h4>
+          </a>
+         </li>
+         <li class="rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 text-gray-600 dark:text-gray-300 duration-150">
+          <a class="flex items-center gap-x-3 p-3" href="#paso2">
+           <span class="text-sm font-medium">2</span>
+           <h4 class="flex-1 text-gray-700 dark:text-gray-200 font-medium lg:line-clamp-1">Crea un Espacio de Lectura Especial</h4>
+          </a>
+         </li>
+         <li class="rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 text-gray-600 dark:text-gray-300 duration-150">
+          <a class="flex items-center gap-x-3 p-3" href="#paso3">
+           <span class="text-sm font-medium">3</span>
+           <h4 class="flex-1 text-gray-700 dark:text-gray-200 font-medium lg:line-clamp-1">Define la Pregunta o el Propósito de la Lectura</h4>
+          </a>
+         </li>
+         <li class="rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 text-gray-600 dark:text-gray-300 duration-150">
+          <a class="flex items-center gap-x-3 p-3" href="#paso4">
+           <span class="text-sm font-medium">4</span>
+           <h4 class="flex-1 text-gray-700 dark:text-gray-200 font-medium lg:line-clamp-1">Baraja y Corta las Cartas</h4>
+          </a>
+         </li>
+         <li class="rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 text-gray-600 dark:text-gray-300 duration-150">
+          <a class="flex items-center gap-x-3 p-3" href="#paso5">
+           <span class="text-sm font-medium">5</span>
+           <h4 class="flex-1 text-gray-700 dark:text-gray-200 font-medium lg:line-clamp-1">Elige una Tirada Sencilla</h4>
+          </a>
+         </li>
+         <li class="rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 text-gray-600 dark:text-gray-300 duration-150">
+          <a class="flex items-center gap-x-3 p-3" href="#paso6">
+           <span class="text-sm font-medium">6</span>
+           <h4 class="flex-1 text-gray-700 dark:text-gray-200 font-medium lg:line-clamp-1">Confía en tu Intuición</h4>
+          </a>
+         </li>
+         <li class="rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 text-gray-600 dark:text-gray-300 duration-150">
+          <a class="flex items-center gap-x-3 p-3" href="#paso7">
+           <span class="text-sm font-medium">7</span>
+           <h4 class="flex-1 text-gray-700 dark:text-gray-200 font-medium lg:line-clamp-1">Anota tus Impresiones</h4>
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <article class="px-4 mt-6 max-w-3xl prose dark:prose-invert md:px-8 lg:px-0">
+       <h2 id="paso1">Paso 1: Familiarízate con tu Mazo</h2>
+       <p>Antes de realizar cualquier lectura, es esencial que te sientas cómodo con tu mazo. No importa si tienes un tarot de Marsella, un Rider-Waite o cualquier otro tipo de baraja: lo importante es que comiences a conocer las cartas y te conectes con sus significados.</p>
+       <p><strong>a. Explora cada carta individualmente</strong></p>
+       <p>Observa cada carta y reflexiona sobre los símbolos y colores. Piensa en cómo te hace sentir cada carta y qué pensamientos o palabras te sugiere. Anota tus impresiones en un diario, ya que esto te ayudará a recordar tus interpretaciones personales.</p>
+       <p><strong>Consejo:</strong> Si deseas profundizar en el significado de cada carta, puedes consultar el material gratuito que hemos preparado para ti, <a href="#">Los 22 Arcanos Mayores: Significados y Simbolismo</a>, donde encontrarás descripciones detalladas que te ayudarán a comprender los arcanos mayores.</p>
+       <p><strong>b. Conéctate con el simbolismo</strong></p>
+       <p>Cada carta de tarot tiene un simbolismo único que puede inspirar diferentes interpretaciones. Dedica un tiempo a analizar las cartas de los arcanos mayores, ya que suelen ser el corazón de cualquier lectura y representan las grandes lecciones de la vida.</p>
+
+       <h2 id="paso2">Paso 2: Crea un Espacio de Lectura Especial</h2>
+       <p>La preparación del ambiente puede ser crucial para una lectura de tarot exitosa. Crear un espacio dedicado a las lecturas te ayudará a concentrarte y a conectar mejor con las cartas.</p>
+       <p><strong>a. Encuentra un lugar tranquilo</strong></p>
+       <p>Elige un rincón de tu hogar donde puedas sentarte cómodamente y sin distracciones. Asegúrate de que sea un lugar donde te sientas en paz.</p>
+       <p><strong>b. Prepara el ambiente</strong></p>
+       <p>Considera encender velas, inciensos o colocar cristales alrededor de tu espacio para ayudarte a crear una atmósfera propicia. Puedes tocar música suave o simplemente dejar el espacio en silencio, según tus preferencias.</p>
+       <p><strong>c. Limpia energéticamente el mazo</strong></p>
+       <p>Si es la primera vez que usas el mazo, puedes limpiarlo sosteniéndolo sobre un incienso o pasándolo por humo de salvia. Esto simboliza una purificación y prepara las cartas para recibir tus preguntas.</p>
+
+       <h2 id="paso3">Paso 3: Define la Pregunta o el Propósito de la Lectura</h2>
+       <p>Uno de los elementos más importantes de una lectura de tarot es la pregunta que vas a formular. Una pregunta clara y específica te ayudará a obtener respuestas más detalladas y útiles.</p>
+       <p><strong>a. Formulación de preguntas efectivas</strong></p>
+       <p>Trata de hacer preguntas abiertas, ya que permiten una interpretación más rica y matizada. Por ejemplo, en lugar de preguntar "¿Me irá bien en mi nuevo trabajo?", podrías preguntar "¿Qué puedo esperar en este nuevo camino profesional?". Evita preguntas que puedan responderse con un simple "sí" o "no".</p>
+       <p><strong>b. Mantén una mentalidad abierta</strong></p>
+       <p>Recuerda que el tarot no es una ciencia exacta, sino una herramienta de introspección y autoconocimiento. Permítete recibir la respuesta de las cartas sin prejuicios y con una mente abierta.</p>
+
+       <h2 id="paso4">Paso 4: Baraja y Corta las Cartas</h2>
+       <p>El acto de barajar las cartas es un momento de conexión entre tú y tu mazo. Este proceso ayuda a mezclar las energías y preparar el mazo para responder a tu pregunta.</p>
+       <p><strong>a. Método de barajado</strong></p>
+       <p>Baraja las cartas de la forma que te sientas más cómodo. Algunas personas prefieren barajar a la manera tradicional, mientras que otras optan por mezclar las cartas extendiéndolas sobre una superficie.</p>
+       <p><strong>b. Corta el mazo</strong></p>
+       <p>Cuando sientas que es el momento adecuado, corta el mazo en tres partes con la mano izquierda, que simboliza la intuición. Luego, vuelve a unir las cartas en el orden que desees.</p>
+       <p><strong>Consejo:</strong> A medida que te familiarices con el tarot, podrás desarrollar un estilo propio al barajar y cortar el mazo, lo cual enriquecerá tu práctica.</p>
+
+       <h2 id="paso5">Paso 5: Elige una Tirada Sencilla</h2>
+       <p>Para tu primera lectura, te sugerimos usar una tirada simple, como la tirada de tres cartas, que es fácil de interpretar y proporciona una visión clara.</p>
+       <p><strong>a. Tirada de tres cartas</strong></p>
+       <p>Esta tirada consiste en colocar tres cartas en línea y puede representar diferentes aspectos según el propósito de la lectura. Aquí tienes algunas variantes comunes:</p>
+       <p><strong>Pasado, Presente, Futuro:</strong> Ideal para comprender la evolución de una situación en el tiempo.</p>
+       <p><strong>Situación, Desafío, Consejo:</strong> Muy útil cuando tienes una situación específica que quieres resolver.</p>
+       <p><strong>b. Interpreta cada carta en su posición</strong></p>
+       <p>Observa cómo se relacionan las cartas entre sí. Por ejemplo, si una carta que representa el "pasado" muestra una situación conflictiva, y la carta del "presente" es positiva, puede significar que has superado ciertos obstáculos. Usa tus impresiones personales y las guías de significado para descifrar la historia que las cartas quieren contarte.</p>
+       <p><strong>Recurso Recomendado:</strong> Para aprender más sobre las tiradas y cómo interpretar combinaciones de cartas, visita nuestra <a href="#">Guía de Lectura Intermedia: Combinaciones de Cartas en el Tarot</a>, donde te explicamos cómo darle sentido a la interacción entre diferentes cartas.</p>
+
+       <h2 id="paso6">Paso 6: Confía en tu Intuición</h2>
+       <p>La intuición es una parte fundamental en la lectura de tarot. Aunque al principio puede que te resulte complicado confiar en tu interpretación, recuerda que la práctica te permitirá desarrollar una intuición más afinada.</p>
+       <p><strong>a. Deja que las cartas "hablen"</strong></p>
+       <p>No intentes racionalizar demasiado las interpretaciones. Muchas veces, los símbolos y las imágenes evocan respuestas intuitivas que pueden parecer poco convencionales pero que tienen sentido a nivel emocional.</p>
+       <p><strong>b. Practica la observación consciente</strong></p>
+       <p>Concéntrate en lo que ves y en cómo te hace sentir cada carta. Permítete fluir con la interpretación sin preocuparte de si es “correcta” o no.</p>
+
+       <h2 id="paso7">Paso 7: Anota tus Impresiones</h2>
+       <p>Documentar cada lectura es una excelente forma de rastrear tu progreso y desarrollar tu estilo personal como lector de tarot. Con el tiempo, notarás patrones y relaciones entre las cartas que se volverán más naturales para ti.</p>
+       <p><strong>a. Crea un Diario de Tarot</strong></p>
+       <p>Puedes escribir una descripción de la tirada, la pregunta formulada y tus interpretaciones de cada carta. Anota cómo te hizo sentir la lectura y cualquier conclusión o consejo que sientas que las cartas te dieron.</p>
+       <p><strong>b. Reflexiona sobre tus lecturas pasadas</strong></p>
+       <p>De vez en cuando, revisa tus lecturas anteriores y observa cómo has avanzado en tus habilidades de interpretación. Este proceso de reflexión te ayudará a mejorar.</p>
+
+       <h2>Conclusión</h2>
+       <p>Hacer tu primera lectura de tarot es un momento significativo. Es normal que sientas nervios al principio, pero con el tiempo y la práctica, te familiarizarás con las cartas y desarrollarás una conexión única con tu mazo. Recuerda que el tarot es una herramienta de autoconocimiento y crecimiento personal, por lo que cada lectura es una oportunidad para aprender algo nuevo sobre ti mismo y el mundo que te rodea.</p>
+       <p><strong>Recomendación Final:</strong> Si quieres seguir perfeccionando tus habilidades, considera inscribirte en nuestro <a href="#">Curso Introductorio de Tarot en Línea</a>, donde podrás aprender técnicas de lectura más avanzadas y obtener asesoramiento personalizado.</p>
+      </article>
+     </div>
+     <div class="flex-none hidden lg:block">
+      <div class="w-full sticky top-3 border-y dark:border-gray-800 lg:border-none">
+       <button aria-label="Play list button" class="w-full flex items-center gap-x-3 py-4 text-left text-gray-700 dark:text-gray-50 font-medium lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+         <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd"></path>
+        </svg>
+        Course playlist
+       </button>
+       <h3 class="hidden text-xl text-gray-800 dark:text-gray-50 font-semibold lg:block">Course playlist</h3>
+       <div class="hidden lg:block">
+        <p class="mt-4 text-gray-700 dark:text-gray-400 lg:mt-3">7 Pasos</p>
+        <ul class="mt-6 pb-4 space-y-1 max-h-[450px] overflow-auto lg:max-w-sm lg:pb-0">
+         <li class="rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 text-gray-600 dark:text-gray-300 duration-150 bg-gray-50 dark:bg-gray-800">
+          <a class="flex items-center gap-x-3 p-3" href="#paso1">
+           <span class="text-sm font-medium">1</span>
+           <h4 class="flex-1 text-gray-700 dark:text-gray-200 font-medium lg:line-clamp-1">Familiarízate con tu Mazo</h4>
+          </a>
+         </li>
+         <li class="rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 text-gray-600 dark:text-gray-300 duration-150">
+          <a class="flex items-center gap-x-3 p-3" href="#paso2">
+           <span class="text-sm font-medium">2</span>
+           <h4 class="flex-1 text-gray-700 dark:text-gray-200 font-medium lg:line-clamp-1">Crea un Espacio de Lectura Especial</h4>
+          </a>
+         </li>
+         <li class="rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 text-gray-600 dark:text-gray-300 duration-150">
+          <a class="flex items-center gap-x-3 p-3" href="#paso3">
+           <span class="text-sm font-medium">3</span>
+           <h4 class="flex-1 text-gray-700 dark:text-gray-200 font-medium lg:line-clamp-1">Define la Pregunta o el Propósito de la Lectura</h4>
+          </a>
+         </li>
+         <li class="rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 text-gray-600 dark:text-gray-300 duration-150">
+          <a class="flex items-center gap-x-3 p-3" href="#paso4">
+           <span class="text-sm font-medium">4</span>
+           <h4 class="flex-1 text-gray-700 dark:text-gray-200 font-medium lg:line-clamp-1">Baraja y Corta las Cartas</h4>
+          </a>
+         </li>
+         <li class="rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 text-gray-600 dark:text-gray-300 duration-150">
+          <a class="flex items-center gap-x-3 p-3" href="#paso5">
+           <span class="text-sm font-medium">5</span>
+           <h4 class="flex-1 text-gray-700 dark:text-gray-200 font-medium lg:line-clamp-1">Elige una Tirada Sencilla</h4>
+          </a>
+         </li>
+         <li class="rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 text-gray-600 dark:text-gray-300 duration-150">
+          <a class="flex items-center gap-x-3 p-3" href="#paso6">
+           <span class="text-sm font-medium">6</span>
+           <h4 class="flex-1 text-gray-700 dark:text-gray-200 font-medium lg:line-clamp-1">Confía en tu Intuición</h4>
+          </a>
+         </li>
+         <li class="rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 text-gray-600 dark:text-gray-300 duration-150">
+          <a class="flex items-center gap-x-3 p-3" href="#paso7">
+           <span class="text-sm font-medium">7</span>
+           <h4 class="flex-1 text-gray-700 dark:text-gray-200 font-medium lg:line-clamp-1">Anota tus Impresiones</h4>
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </div>
+
+   </div>
+   <style>
+    @media (max-width: 1024px) {
+     .plyr {
+      border-radius: 0px;
+     }
+    }
+   </style>
+  </main>
+  <footer class="pt-32 sm:pt-44">
+   <div class="custom-screen text-gray-600 dark:text-gray-300">
+    <div class="mt-6 md:mt-0">
+     <h3 class="text-gray-800 dark:text-gray-50 text-xl font-semibold sm:text-2xl">Suscríbete a nuestro boletín semanal.</h3>
+     <p class="max-w-xl mt-3">No te pierdas nuestras actualizaciones. Recibe artículos y consejos exclusivos directamente en tu correo cada miércoles.</p>
+     <form class="mt-6 flex items-center gap-x-3">
+      <div class="relative">
+       <svg class="w-6 h-6 text-gray-400 absolute left-3 inset-y-0 my-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"></path>
+       </svg>
+       <input type="email" required="" placeholder="El email que mas usas" class="w-full pl-12 pr-3 dark:bg-gray-800 dark:focus:bg-gray-700 dark:text-gray-300 dark:border-gray-800 focus:border-blue-600 w-full px-3 py-2 bg-white text-gray-500 outline-none border dark:border-gray-800 shadow-sm rounded-lg duration-150" />
+      </div>
+      <button role="button" class="block w-auto text-white bg-blue-600 dark:bg-sky-500 hover:bg-blue-500 dark:hover:bg-sky-600 ring-offset-2 ring-blue-600 dark:ring-sky-500 focus:ring shadow rounded-lg px-4 py-2.5 font-medium text-sm text-center duration-150 rounded-lg">Suscribirse</button>
+     </form>
+    </div>
+    <div class="mt-10 py-10 border-t dark:border-gray-800 flex-row-reverse items-center justify-between sm:flex">
+     <ul class="flex flex-wrap items-center gap-4 sm:text-sm">
+      <li class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-sky-500 duration-150 md:font-medium"><a href="/#features">Características</a></li>
+      <li class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-sky-500 duration-150 md:font-medium"><a href="/tutorials/cs50">Lecciones</a></li>
+      <li class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-sky-500 duration-150 md:font-medium"><a href="/#pricing">Planes de suscripción</a></li>
+     </ul>
+     <p class="mt-6 sm:mt-0">© 2023 Academia del Tarot. Todos los derechos reservados.</p>
+    </div>
+   </div>
+  </footer>
+ </div>
+</body>
+
+</html>
